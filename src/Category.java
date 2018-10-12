@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 public enum Category {
     BEAUTY (1, "be"),
@@ -28,6 +29,6 @@ public enum Category {
 
     }
     public static Category get(String name){
-        Arrays.stream(values()).filter(category -> )
+        final Stream<Category> categoryStream = Arrays.stream(values( )).filter(category ->);
     }
 }
